@@ -1,0 +1,792 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./easyChem.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Chemistry</title>
+</head>
+<body>
+    <h1>Таблица Менделеева (с приколом)</h1>
+    <h2 id="string"></h2>
+    <div id="PeriodicSysTable">
+        <table class="mentable">
+            <tbody>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">1</div>
+                  <div class="id">H</div>
+                  <div class="name">Водород</div>
+                  <div class="mass">1.008</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="chem-element s_block">
+                  <div class="number">2</div>
+                  <div class="id">He</div>
+                  <div class="name">Гелий</div>
+                  <div class="mass">4.003</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">3</div>
+                  <div class="id">Li</div>
+                  <div class="name">Литий</div>
+                  <div class="mass">6.941</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">4</div>
+                  <div class="id">Be</div>
+                  <div class="name">Бериллий</div>
+                  <div class="mass">9.0122</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="chem-element p_block">
+                  <div class="number">5</div>
+                  <div class="id">B</div>
+                  <div class="name">Бор</div>
+                  <div class="mass">10.811</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">6</div>
+                  <div class="id">C</div>
+                  <div class="name">Углерод</div>
+                  <div class="mass">12.011</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">7</div>
+                  <div class="id">N</div>
+                  <div class="name">Азот</div>
+                  <div class="mass">14.007</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">8</div>
+                  <div class="id">O</div>
+                  <div class="name">Кислород</div>
+                  <div class="mass">15.999</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">9</div>
+                  <div class="id">F</div>
+                  <div class="name">Фтор</div>
+                  <div class="mass">18.998</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">10</div>
+                  <div class="id">Ne</div>
+                  <div class="name">Неон</div>
+                  <div class="mass">20.179</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">11</div>
+                  <div class="id">Na</div>
+                  <div class="name">Натрий</div>
+                  <div class="mass">22.99</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">12</div>
+                  <div class="id">Mg</div>
+                  <div class="name">Магний</div>
+                  <div class="mass">24.312</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="chem-element p_block">
+                  <div class="number">13</div>
+                  <div class="id">Al</div>
+                  <div class="name">Алюминий</div>
+                  <div class="mass">26.092</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">14</div>
+                  <div class="id">Si</div>
+                  <div class="name">Кремний</div>
+                  <div class="mass">28.086</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">15</div>
+                  <div class="id">P</div>
+                  <div class="name">Фосфор</div>
+                  <div class="mass">30.974</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">16</div>
+                  <div class="id">S</div>
+                  <div class="name">Сера</div>
+                  <div class="mass">32.064</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">17</div>
+                  <div class="id">Cl</div>
+                  <div class="name">Хлор</div>
+                  <div class="mass">35.453</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">18</div>
+                  <div class="id">Ar</div>
+                  <div class="name">Аргон</div>
+                  <div class="mass">39.948</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">19</div>
+                  <div class="id">K</div>
+                  <div class="name">Калий</div>
+                  <div class="mass">39.102</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">20</div>
+                  <div class="id">Ca</div>
+                  <div class="name">Кальций</div>
+                  <div class="mass">40.08</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">21</div>
+                  <div class="id">Sc</div>
+                  <div class="name">Скандий</div>
+                  <div class="mass">44.956</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">22</div>
+                  <div class="id">Ti</div>
+                  <div class="name">Титан</div>
+                  <div class="mass">47.956</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">23</div>
+                  <div class="id">V</div>
+                  <div class="name">Ванадий</div>
+                  <div class="mass">50.941</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">24</div>
+                  <div class="id">Cr</div>
+                  <div class="name">Хром</div>
+                  <div class="mass">51.996</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">25</div>
+                  <div class="id">Mn</div>
+                  <div class="name">Марганец</div>
+                  <div class="mass">54.938</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">26</div>
+                  <div class="id">Fe</div>
+                  <div class="name">Железо</div>
+                  <div class="mass">55.849</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">27</div>
+                  <div class="id">Co</div>
+                  <div class="name">Кобальт</div>
+                  <div class="mass">58.933</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">28</div>
+                  <div class="id">Ni</div>
+                  <div class="name">Никель</div>
+                  <div class="mass">58.7</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">29</div>
+                  <div class="id">Cu</div>
+                  <div class="name">Медь</div>
+                  <div class="mass">63.546</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">30</div>
+                  <div class="id">Zn</div>
+                  <div class="name">Цинк</div>
+                  <div class="mass">65.37</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">31</div>
+                  <div class="id">Ga</div>
+                  <div class="name">Галлий</div>
+                  <div class="mass">69.72</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">32</div>
+                  <div class="id">Ge</div>
+                  <div class="name">Германий</div>
+                  <div class="mass">72.59</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">33</div>
+                  <div class="id">As</div>
+                  <div class="name">Мышьяк</div>
+                  <div class="mass">74.922</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">34</div>
+                  <div class="id">Se</div>
+                  <div class="name">Селен</div>
+                  <div class="mass">78.96</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">35</div>
+                  <div class="id">Br</div>
+                  <div class="name">Бром</div>
+                  <div class="mass">79.904</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">36</div>
+                  <div class="id">Kr</div>
+                  <div class="name">Криптон</div>
+                  <div class="mass">83.8</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">37</div>
+                  <div class="id">Rb</div>
+                  <div class="name">Рубидий</div>
+                  <div class="mass">85.468</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">38</div>
+                  <div class="id">Sr</div>
+                  <div class="name">Стронций</div>
+                  <div class="mass">87.62</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">39</div>
+                  <div class="id">Y</div>
+                  <div class="name">Иттрий</div>
+                  <div class="mass">88.906</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">40</div>
+                  <div class="id">Zr</div>
+                  <div class="name">Цирконий</div>
+                  <div class="mass">91.22</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">41</div>
+                  <div class="id">Nb</div>
+                  <div class="name">Ниобий</div>
+                  <div class="mass">92.906</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">42</div>
+                  <div class="id">Mo</div>
+                  <div class="name">Молибден</div>
+                  <div class="mass">95.94</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">43</div>
+                  <div class="id">Tc</div>
+                  <div class="name">Технеций</div>
+                  <div class="mass">99</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">44</div>
+                  <div class="id">Ru</div>
+                  <div class="name">Рутений</div>
+                  <div class="mass">101.07</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">45</div>
+                  <div class="id">Rh</div>
+                  <div class="name">Родий</div>
+                  <div class="mass">102.906</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">46</div>
+                  <div class="id">Pd</div>
+                  <div class="name">Палладий</div>
+                  <div class="mass">106.4</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">47</div>
+                  <div class="id">Ag</div>
+                  <div class="name">Серебро</div>
+                  <div class="mass">107.868</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">48</div>
+                  <div class="id">Cd</div>
+                  <div class="name">Кадмий</div>
+                  <div class="mass">112.41</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">49</div>
+                  <div class="id">In</div>
+                  <div class="name">Индий</div>
+                  <div class="mass">114.82</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">50</div>
+                  <div class="id">Sn</div>
+                  <div class="name">Олово</div>
+                  <div class="mass">118.69</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">51</div>
+                  <div class="id">Sb</div>
+                  <div class="name">Сурьма</div>
+                  <div class="mass">121.75</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">52</div>
+                  <div class="id">Te</div>
+                  <div class="name">Теллур</div>
+                  <div class="mass">127.6</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">53</div>
+                  <div class="id">I</div>
+                  <div class="name">Йод</div>
+                  <div class="mass">126.905</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">54</div>
+                  <div class="id">Xe</div>
+                  <div class="name">Ксенон</div>
+                  <div class="mass">131.3</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">55</div>
+                  <div class="id">Cs</div>
+                  <div class="name">Цезий</div>
+                  <div class="mass">132.905</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">56</div>
+                  <div class="id">Ba</div>
+                  <div class="name">Барий</div>
+                  <div class="mass">137.34</div>
+                </td>
+                <td></td>
+                <td class="chem-element d_block">
+                  <div class="number">72</div>
+                  <div class="id">Hf</div>
+                  <div class="name">Гафний</div>
+                  <div class="mass">178.49</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">73</div>
+                  <div class="id">Ta</div>
+                  <div class="name">Тантал</div>
+                  <div class="mass">180.948</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">74</div>
+                  <div class="id">W</div>
+                  <div class="name">Вольфрам</div>
+                  <div class="mass">183.85</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">75</div>
+                  <div class="id">Re</div>
+                  <div class="name">Рений</div>
+                  <div class="mass">186.207</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">76</div>
+                  <div class="id">Os</div>
+                  <div class="name">Осмий</div>
+                  <div class="mass">190.2</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">77</div>
+                  <div class="id">Ir</div>
+                  <div class="name">Иридий</div>
+                  <div class="mass">192.22</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">78</div>
+                  <div class="id">Pt</div>
+                  <div class="name">Платина</div>
+                  <div class="mass">195.09</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">79</div>
+                  <div class="id">Au</div>
+                  <div class="name">Золото</div>
+                  <div class="mass">196.967</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">80</div>
+                  <div class="id">Hg</div>
+                  <div class="name">Ртуть</div>
+                  <div class="mass">200.59</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">81</div>
+                  <div class="id">Tl</div>
+                  <div class="name">Таллий</div>
+                  <div class="mass">204.37</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">82</div>
+                  <div class="id">Pb</div>
+                  <div class="name">Свинец</div>
+                  <div class="mass">207.19</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">83</div>
+                  <div class="id">Bi</div>
+                  <div class="name">Висмут</div>
+                  <div class="mass">208.98</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">84</div>
+                  <div class="id">Po</div>
+                  <div class="name">Полоний</div>
+                  <div class="mass">210</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">85</div>
+                  <div class="id">At</div>
+                  <div class="name">Астат</div>
+                  <div class="mass">210</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">86</div>
+                  <div class="id">Rn</div>
+                  <div class="name">Радон</div>
+                  <div class="mass">222</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element s_block">
+                  <div class="number">87</div>
+                  <div class="id">Fr</div>
+                  <div class="name">Франций</div>
+                  <div class="mass">223</div>
+                </td>
+                <td class="chem-element s_block">
+                  <div class="number">88</div>
+                  <div class="id">Ra</div>
+                  <div class="name">Радий</div>
+                  <div class="mass">226</div>
+                </td>
+                <td></td>
+                <td class="chem-element d_block">
+                  <div class="number">104</div>
+                  <div class="id">Rf</div>
+                  <div class="name">Резерфордий</div>
+                  <div class="mass">261</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">105</div>
+                  <div class="id">Db</div>
+                  <div class="name">Дубний</div>
+                  <div class="mass">262</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">106</div>
+                  <div class="id">Sg</div>
+                  <div class="name">Сиборгий</div>
+                  <div class="mass">271</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">107</div>
+                  <div class="id">Bh</div>
+                  <div class="name">Борий</div>
+                  <div class="mass">267</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">108</div>
+                  <div class="id">Hs</div>
+                  <div class="name">Хассий</div>
+                  <div class="mass">269</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">109</div>
+                  <div class="id">Mt</div>
+                  <div class="name">Мейтнерий</div>
+                  <div class="mass">276</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">110</div>
+                  <div class="id">Ds</div>
+                  <div class="name">Дармштадтий</div>
+                  <div class="mass">281</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">111</div>
+                  <div class="id">Rg</div>
+                  <div class="name">Рентгений</div>
+                  <div class="mass">280</div>
+                </td>
+                <td class="chem-element d_block">
+                  <div class="number">112</div>
+                  <div class="id">Cn</div>
+                  <div class="name">Коперниций</div>
+                  <div class="mass">285</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">113</div>
+                  <div class="id">Nh</div>
+                  <div class="name">Нихоний</div>
+                  <div class="mass">286</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">114</div>
+                  <div class="id">Fl</div>
+                  <div class="name">Флеровий</div>
+                  <div class="mass">289</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">115</div>
+                  <div class="id">Mc</div>
+                  <div class="name">Московий</div>
+                  <div class="mass">289</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">116</div>
+                  <div class="id">Lv</div>
+                  <div class="name">Ливерморий</div>
+                  <div class="mass">293</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">117</div>
+                  <div class="id">Ts</div>
+                  <div class="name">Теннессин</div>
+                  <div class="mass">294</div>
+                </td>
+                <td class="chem-element p_block">
+                  <div class="number">118</div>
+                  <div class="id">Og</div>
+                  <div class="name">Оганесон</div>
+                  <div class="mass">294</div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <table class="mentable">
+            <tbody>
+              <tr>
+                <td class="chem-element f_block">
+                  <div class="number">57</div>
+                  <div class="id">La</div>
+                  <div class="name">Лантан</div>
+                  <div class="mass">138.906</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">58</div>
+                  <div class="id">Ce</div>
+                  <div class="name">Церий</div>
+                  <div class="mass">140.115</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">59</div>
+                  <div class="id">Pr</div>
+                  <div class="name">Празеодим</div>
+                  <div class="mass">140.908</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">60</div>
+                  <div class="id">Nd</div>
+                  <div class="name">Неодим</div>
+                  <div class="mass">144.24</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">61</div>
+                  <div class="id">Pm</div>
+                  <div class="name">Прометий</div>
+                  <div class="mass">145</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">62</div>
+                  <div class="id">Sm</div>
+                  <div class="name">Самарий</div>
+                  <div class="mass">150.4</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">63</div>
+                  <div class="id">Eu</div>
+                  <div class="name">Европий</div>
+                  <div class="mass">151.96</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">64</div>
+                  <div class="id">Gd</div>
+                  <div class="name">Гадолиний</div>
+                  <div class="mass">157.25</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">65</div>
+                  <div class="id">Tb</div>
+                  <div class="name">Тербий</div>
+                  <div class="mass">158.926</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">66</div>
+                  <div class="id">Dy</div>
+                  <div class="name">Диспрозий</div>
+                  <div class="mass">162.5</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">67</div>
+                  <div class="id">Ho</div>
+                  <div class="name">Гольмий</div>
+                  <div class="mass">164.93</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">68</div>
+                  <div class="id">Er</div>
+                  <div class="name">Эрбий</div>
+                  <div class="mass">167.26</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">69</div>
+                  <div class="id">Tm</div>
+                  <div class="name">Тулий</div>
+                  <div class="mass">168.934</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">70</div>
+                  <div class="id">Yb</div>
+                  <div class="name">Иттербий</div>
+                  <div class="mass">173.04</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">71</div>
+                  <div class="id">Lu</div>
+                  <div class="name">Лютеций</div>
+                  <div class="mass">174.97</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="chem-element f_block">
+                  <div class="number">89</div>
+                  <div class="id">Ac</div>
+                  <div class="name">Актиний</div>
+                  <div class="mass">227</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">90</div>
+                  <div class="id">Th</div>
+                  <div class="name">Торий</div>
+                  <div class="mass">232.038</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">91</div>
+                  <div class="id">Pa</div>
+                  <div class="name">Протактиний</div>
+                  <div class="mass">231</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">92</div>
+                  <div class="id">U</div>
+                  <div class="name">Уран</div>
+                  <div class="mass">238.29</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">93</div>
+                  <div class="id">Np</div>
+                  <div class="name">Нептуний</div>
+                  <div class="mass">237</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">94</div>
+                  <div class="id">Pu</div>
+                  <div class="name">Плутоний</div>
+                  <div class="mass">244</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">95</div>
+                  <div class="id">Am</div>
+                  <div class="name">Америций</div>
+                  <div class="mass">243</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">96</div>
+                  <div class="id">Cm</div>
+                  <div class="name">Кюрий</div>
+                  <div class="mass">247</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">97</div>
+                  <div class="id">Bk</div>
+                  <div class="name">Берклий</div>
+                  <div class="mass">247</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">98</div>
+                  <div class="id">Cf</div>
+                  <div class="name">Калифорний</div>
+                  <div class="mass">251</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">99</div>
+                  <div class="id">Es</div>
+                  <div class="name">Эйнштейний</div>
+                  <div class="mass">254</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">100</div>
+                  <div class="id">Fm</div>
+                  <div class="name">Фермий</div>
+                  <div class="mass">257</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">101</div>
+                  <div class="id">Md</div>
+                  <div class="name">Менделеевий</div>
+                  <div class="mass">258</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">102</div>
+                  <div class="id">No</div>
+                  <div class="name">Нобелий</div>
+                  <div class="mass">259</div>
+                </td>
+                <td class="chem-element f_block">
+                  <div class="number">103</div>
+                  <div class="id">Lr</div>
+                  <div class="name">Лоуренсий</div>
+                  <div class="mass">260</div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+          
+          
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
